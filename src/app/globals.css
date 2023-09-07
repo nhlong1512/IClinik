@@ -1,7 +1,95 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* 
+100	Thin (Hairline)
+200	Extra Light (Ultra Light)
+300	Light
+400	Normal (Regular)
+500	Medium
+600	Semi Bold (Semi Bold)
+700	Bold
+800	Extra Bold (Ultra Bold)
+900	Black (Heavy) 
+*/
+:root {
+	--doc-height: 100%;
+}
 
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Black.ttf");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-ExtraLight.ttf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans-Thin.ttf");
+  font-weight: 100;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------- CSS DEFAULT ------------------------------------------*/
+/* 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +112,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
