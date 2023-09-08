@@ -11,6 +11,7 @@ import AboutUsHome from "@/components/Home/AboutUs/page";
 import GetInTouchForm from "@/components/Home/GetInTouchForm/page";
 import Transformations from "@/components/Home/Transformations/page";
 import Sponsors from "@/components/Home/Sponsors/page";
+import OurMainDoctors from "@/components/Home/OurMainDoctors/page";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <AboutUsHome/>
       <Transformations/>
       <Sponsors/>
+      <OurMainDoctors/>
     </div>
   );
 }
