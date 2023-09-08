@@ -12,11 +12,12 @@ import ButtonBlueWave from "@/components/common/ButtonBlueWave/page";
 import { BLUE_WAVE, LINEAR_GRADIENT_PRIMARY } from "@/utils/colors";
 import GetInTouchForm from "../GetInTouchForm/page";
 import GalleryList from "../GalleryList/page";
+import Link from "next/link";
 
 const AboutUsHome = () => {
   return (
     <div className="bg-white_cloud relative py-[240px] pb-[120px]">
-      <GetInTouchForm/>
+      <GetInTouchForm />
       <Container maxW="1536px">
         <div className="flex gap-[50px] w-full flex-1">
           <div className="flex flex-col relative basis-[40%] w-full">
@@ -24,10 +25,12 @@ const AboutUsHome = () => {
             <Image src={AboutUsHome2} alt="About Us Home 2" className="absolute bottom-0 right-0" />
           </div>
           <div className="flex basis-[60%] flex-col">
-            <ButtonBlueWave color={LINEAR_GRADIENT_PRIMARY} title="About us" className="px-[12px] py-[6px] text-[11px] tracking-[4px]" />
+            <Link href="/about-us">
+              <ButtonBlueWave color={LINEAR_GRADIENT_PRIMARY} title="About us" className="px-[12px] py-[6px] text-[11px] tracking-[4px]" />
+            </Link>
             <h3 className="my-0 mt-[30px] text-[50px] leading-[50px] tracking-[1px] font-normal text-dark_night mb-[30px]">Plastic Surgery</h3>
             <p className="text-[14px] leading-[28px] font-[400] tracking-[1px] text-gray_text mb-[40px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies magna sit amet ligula fermentum, vel egestas augue lobortis. Cras quam erat, lacinia sed eleifend sed, auctor non est. Vestibulum in orci magna. Suspendisse potenti. Suspendisse sagittis in ante eu blandit. 
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies magna sit amet ligula fermentum, vel egestas augue lobortis. Cras quam erat, lacinia sed eleifend sed, auctor non est. Vestibulum in orci magna. Suspendisse potenti. Suspendisse sagittis in ante eu blandit.
             </p>
             <div className="flex gap-[40px] mb-[40px]">
               <Image
@@ -35,7 +38,7 @@ const AboutUsHome = () => {
                 alt="About Us Home 3"
               />
               <p className="text-[14px] leading-[28px] font-[400] tracking-[1px] text-gray_text">
-              Praesent ac aliquam augue. Nam ullamcorper orci quis tellus pretium euismod. Duis gravida ultricies erat eget ultrices. Aliquam leo magna, viverra vel pretium eu, cursus at lacus. Praesent sollicitudin odio ut leo pretium, quis malesuada turpis faucibus. 
+                Praesent ac aliquam augue. Nam ullamcorper orci quis tellus pretium euismod. Duis gravida ultricies erat eget ultrices. Aliquam leo magna, viverra vel pretium eu, cursus at lacus. Praesent sollicitudin odio ut leo pretium, quis malesuada turpis faucibus.
               </p>
             </div>
             <p className="text-[14px] leading-[28px] font-[400] tracking-[1px] text-gray_text mb-[40px]">
@@ -65,7 +68,7 @@ const AboutUsHome = () => {
           </div>
         </div>
       </Container>
-      <GalleryList/>
+      <GalleryList />
     </div>
   );
 };

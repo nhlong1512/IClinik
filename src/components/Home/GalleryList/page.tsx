@@ -33,7 +33,7 @@ const GalleryList = () => {
     return (
         <div className='w-full'>
             <Container maxW='1536px'>
-                <div className='flex gap-[30px] justify-center items-center mt-[120px]'>
+                <div className='flex gap-[40px] justify-center items-center mt-[120px]'>
                     {listGallery.map((item,index) => (
                         <div className='flex justify-center items-center flex-col' key={item.title}>
                             <Image src={item.urlImage} alt ={item.title}/>

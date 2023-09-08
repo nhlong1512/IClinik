@@ -7,6 +7,10 @@ import OurMainDoctorsBackground from "@/assets/images/our-main-doctors-bg.png"
 import Doctor1 from "@/assets/images/doctor-main-1.png"
 import Doctor2 from "@/assets/images/doctor-main-2.png"
 import Doctor3 from "@/assets/images/doctor-main-3.png"
+import Gallery5 from "@/assets/images/gallery-5.png"
+import Gallery6 from "@/assets/images/gallery-6.png"
+import Gallery7 from "@/assets/images/gallery-7.png"
+import Gallery1 from "@/assets/images/gallery-1.png"
 import React from 'react'
 
 const listMainDoctors = [
@@ -90,6 +94,12 @@ const OurMainDoctors = () => {
                                 
                             </div>
                         </div>
+                    </div>
+                    <div className='flex justify-center gap-[40px] w-full mt-[60px]'>
+                        <Image src = {Gallery5} alt='Gallery 5'/>
+                        <Image src = {Gallery6} alt='Gallery 6'/>
+                        <Image src = {Gallery7} alt='Gallery 7'/>
+                        <Image src = {Gallery1} alt='Gallery 1'/>
                     </div>
                 </div>
             </Container>

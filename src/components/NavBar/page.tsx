@@ -32,7 +32,7 @@ const NavBar = () => {
           ))}
         </div>
         <div>
-          <Button className="hover:bg-teal_strong text-teal_light hover:text-white_cloud hover:border-teal_strong" variant='outline' colorScheme={TEAL_LIGHT} borderColor={TEAL_STRONG} border='2px' size="lg">
+          <Button className="hover:bg-teal_light text-teal_strong hover:text-white_cloud hover:border-teal_light" variant='outline' colorScheme={TEAL_STRONG} borderColor={TEAL_STRONG} border='2px' size="lg">
             Contact
           </Button>
         </div>
