@@ -12,6 +12,7 @@ import GetInTouchForm from "@/components/Home/GetInTouchForm/page";
 import Transformations from "@/components/Home/Transformations/page";
 import Sponsors from "@/components/Home/Sponsors/page";
 import OurMainDoctors from "@/components/Home/OurMainDoctors/page";
+import OurTiming from "@/components/Home/OurTiming/page";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Transformations/>
       <Sponsors/>
       <OurMainDoctors/>
+      <OurTiming/>
     </div>
   );
 }
