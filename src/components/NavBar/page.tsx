@@ -1,9 +1,10 @@
 "use client";
+import { TEAL_LIGHT, TEAL_STRONG, WHITE_CLOUD } from "@/utils/colors";
 import { Button, Container } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";
 
-const NavTitle = [
+const navTitle = [
   { name: "About Us", path: "about-us" },
   { name: "Our Shop", path: "our-shop" },
   { name: "Gallery", path: "gallery" },
@@ -20,18 +21,18 @@ const NavBar = () => {
           </div>
         </Link>
         <div className="flex gap-[57px] justify-center">
-          {NavTitle.map((item, index) => (
+          {navTitle.map((item, index) => (
             <Link
               key={item.name}
               href={item.path}
-              className="cursor-pointer hover:opacity-70 hover:text-white_cloud text-white_cloud"
+              className="cursor-pointer hover:text-teal_light text-white_cloud"
             >
               <p className="text-[18px] font-[700] uppercase">{item.name}</p>
             </Link>
           ))}
         </div>
         <div>
-          <Button className="bg-teal_light" colorScheme="teal" size="lg">
+          <Button className="hover:bg-teal_strong text-teal_light hover:text-white_cloud hover:border-teal_strong" variant='outline' colorScheme={TEAL_LIGHT} borderColor={TEAL_STRONG} border='2px' size="lg">
             Contact
           </Button>
         </div>

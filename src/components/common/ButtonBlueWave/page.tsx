@@ -1,4 +1,3 @@
-import { BLUE_WAVE } from "@/utils/colors";
 import React from "react";
 
 interface IProps {
@@ -8,11 +7,10 @@ interface IProps {
 }
 
 const ButtonBlueWave = ({ title, color, className }: IProps) => {
-  let bg_color = "";
-  color == BLUE_WAVE ? (bg_color = "bg-blue_wave") : "";
   return (
     <div
-      className={`inline-flex uppercase text-white_cloud text-[16px] font-[400] hover:opacity-[0.8] cursor-pointer ${bg_color} ${className ? className : ""}`}
+      className={`uppercase w-fit text-white_cloud text-[16px] font-[400] hover:opacity-[0.8] cursor-pointer ${className ? className : ""}`}
+      style={{background: color}}
     >
       <p className="m-0">{title}</p>
     </div>

@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en" className="h-[100%]">
       <body className={dmSans.className} style={{height: '100%'}}>
         <Providers>
-          <div className="h-[100%]">
+          <div className="h-[100%] mb-[300px]">
             <NavBar />
-            <div>{children}</div>
+            <div className="h-full">{children}</div>
           </div>
         </Providers>
       </body>

@@ -23,7 +23,7 @@ export default function Header() {
           fill
           className="object-fill z-[1] absolute"
         />
-        <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[3] bg-t">
+        <div className="absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] z-[3]">
           <ButtonBlueWave
             title="Plastic Surgery"
             color={BLUE_WAVE}
